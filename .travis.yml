@@ -7,8 +7,8 @@ script:
 deploy:
   - provider: s3
     skip_cleanup: true
-    access_key_id: AWS_ACCESS_ID
-    secret_access_key: AWS_ACCESS_KEY
+    access_key_id: $AWS_ACCESS_ID
+    secret_access_key: $AWS_ACCESS_KEY
     bucket: bsawa-staging
     region: eu-north-1
     acl: public_read
@@ -16,8 +16,8 @@ deploy:
       branch: develop
   - provider: s3
     skip_cleanup: true
-    access_key_id: AWS_ACCESS_ID
-    secret_access_key: AWS_ACCESS_KEY
+    access_key_id: $AWS_ACCESS_ID
+    secret_access_key: $AWS_ACCESS_KEY
     bucket: bsawa-production
     region: eu-north-1
     acl: public_read
