@@ -128,8 +128,12 @@ input[type="checkbox"]#mode:checked::after {
     margin: 10px;
     height: fit-content;
     width: fit-content;
-    background: none;
+    background: white;
     border: none;
+    border-style: inset;
+    border-color: black;
+    border-radius: 4px;
+    transition: 0.5s;
 }
 
 #modalBtn:hover,
