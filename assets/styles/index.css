@@ -186,3 +186,7 @@ html {
 main {
   background: none;
 }
+
+iframe {
+    border: none;
+}
