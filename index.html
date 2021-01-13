@@ -38,12 +38,17 @@
 </head>
 
 <body>
-  <!-- <dialog> -->
-  <!-- <header> -->
   <header>
     <label>
       <input type="checkbox" id="mode" name="btn">
     </label>
+    <button id="modalBtn">Open Modal</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <p>This is modal</p>
+      </div>
+    </div>
   </header>
   <main>
     <article>
@@ -551,6 +556,7 @@
     </article>
   </main>
   <script src="./assets/src/mode_changer.js"></script>
+  <script src="./assets/src/modal_window.js"></script>
   <!-- <footer> -->
   <!-- <script> -->
 </body>
