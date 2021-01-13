@@ -114,6 +114,7 @@ footer
     position: relative;
     height: inherit;
     width: inherit;
+    text-align: center;
 }
 
 .animations
@@ -164,4 +165,12 @@ footer
 .contacts li a.fandom:hover
 {
     color: rgb(60, 255, 0);
+}
+
+.details > input::after {
+    content: "\1F44B";
+    border: none;
+    position: relative;
+    height: 2em;
+    width: 2em;
 }
