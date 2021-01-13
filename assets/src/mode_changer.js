@@ -1,9 +1,24 @@
-const page_styles = document.getElementsByClassName('page')[0].style;
-const light_mode = { "background": "white", "color": "black", "transition": "0.5s" };
-const dark_mode = { "background": "black", "color": "white" };
-const theme_button = document.getElementById('mode');
-theme_button.addEventListener('click', () => 
-    theme_button.checked
-    ? Object.assign(page_styles, dark_mode)
-    : Object.assign(page_styles, light_mode)
-);
+const pageStyles = document.getElementsByClassName('page')[0].style;
+
+const avatarStyles = document.getElementsByClassName('avatar')[0];
+
+const lightMode = { "background": "white", "color": "black", "transition": "0.5s" };
+
+const darkMode = { "background": "black", "color": "white", "transition": "0.5s" };
+
+const avatarLight = "./assets/images/avatar-light.png";
+
+const avatarDark = "./assets/images/avatar-dark.png";
+
+const themeButton = document.getElementById('mode');
+
+themeButton.addEventListener('click', () => {
+    if (themeButton.checked) {
+        Object.assign(pageStyles, darkMode);
+        avatarStyles.data = avatarDark;
+        avatarStyles.style.transition = "1s";
+    } else {
+        Object.assign(pageStyles, lightMode);
+        avatarStyles.data = avatarLight;
+    }
+});
