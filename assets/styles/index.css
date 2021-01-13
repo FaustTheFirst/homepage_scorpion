@@ -108,7 +108,10 @@ header
     cursor: pointer;
 }
 
-main
+footer
 {
-    position: inherit;
+    margin: 10px;
+    position: relative;
+    height: inherit;
+    width: inherit;
 }
