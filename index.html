@@ -33,12 +33,23 @@
   <title>Résumé of Hanzo Hasashi a.k.a Scorpion</title>
   <link rel="shortcut icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="./dependencies/volodymyrkushnir.com/assets/stylesheets/base.css" />
+  <link rel="stylesheet" href="./assets/styles/index.css">
   <meta name="google-site-verification" content="d9OfYE5KP4GiGf2VdejVvQpNhXnJgq63ZG0D6m64Td8" />
 </head>
 
 <body>
-  <!-- <dialog> -->
-  <!-- <header> -->
+  <header>
+    <label>
+      <input type="checkbox" id="mode" name="btn">
+    </label>
+    <button id="modalBtn">Open Modal</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="closeBtn">&times;</span>
+        <p>This is modal</p>
+      </div>
+    </div>
+  </header>
   <main>
     <article>
       <div class="page" style="border-color: midnightblue;">
@@ -46,7 +57,7 @@
           <div class="row">
             <div class="three wide center aligned column">
               <div class="avatar-wrapper">
-                <object class="avatar" data="./assets/images/avatar.jpg" role="img"
+                <object class="avatar" data="./assets/images/avatar-light.png" role="img"
                   aria-label="Resume picture"></object>
               </div>
             </div>
@@ -114,7 +125,20 @@
                     pretty nice guy. So, if you a good buddy, we
                     will be friends, I believe. But, if you do either your business against EarthRealm or with Quan Chi,
                     for example... I
-                    have for you just three words: GET OVER HERE!
+                    have for you just three words:
+                    <audio id="funSound" src="./assets/audio/gerara-here.mp3"></audio>
+                    <abbr title="click me">
+                      <button id="funAudio" style="border: unset;">
+                        &bull;
+                      </button>
+                    </abbr>
+                    Oops! I mean:
+                    <audio id="normalSound" src="./assets/audio/get-over-here.mp3"></audio>
+                    <abbr title="and me">
+                      <button id="normalAudio" style="border: unset;">
+                        &bull;
+                      </button>
+                    </abbr>
                   </p>
                 </div>
               </div>
@@ -475,7 +499,10 @@
                 </li>
               </ul>
             </div>
-            <div class="six wide column">
+            <div class="six wide column" style="text-align: center;">
+              <section>
+                <img class="big-animation" src="./assets/images/scorpion_stands.gif" alt="scorpion standing">
+              </section>
               <section>
                 <h6>
                   My fight styles
@@ -501,6 +528,9 @@
                   MY FATALITIES, BRUTALITIES, etc.
                 </h6>
                 Calm down, it's violent content, I cannot show you it there!
+                <p>
+                  <img class="animations" src="./assets/images/dance.gif" alt="scorpion dancing">
+                </p>
               </section>
               <section>
                 <h6>
@@ -537,6 +567,9 @@
                 blunt knives;
                 rains;
                 Sub-Zero (in the past, we are friends now)
+                <p>
+                  <img class="animations" src="./assets/images/brotality.gif" alt="scorpion and sub-zero are friends">
+                </p>
               </section>
             </div>
           </div>
@@ -544,6 +577,18 @@
       </div>
     </article>
   </main>
+  <footer>
+    <iframe width="672" height="378" src="https://www.youtube.com/embed/jSi2LDkyKmI" frameborder="0" allow="accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture" allowfullscreen>
+    </iframe>
+  </footer>
+  <script src="./assets/src/mode_changer.js"></script>
+  <script src="./assets/src/modal_window.js"></script>
+  <script src="./assets/src/voices.js"></script>
   <!-- <footer> -->
   <!-- <script> -->
 </body>
