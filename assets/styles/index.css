@@ -130,3 +130,38 @@ footer
     transform: scale(-1, 1);
     justify-content: center;
 }
+
+.contacts li a
+{
+    color: inherit;
+}
+
+.contacts li a .icon
+{
+    background: white;
+}
+
+.contacts li a.facebook:hover
+{
+    color: rgb(11, 11, 240);
+}
+
+.contacts li a.twitter:hover
+{
+    color: rgb(45, 201, 248);
+}
+
+.contacts li a.instagram:hover
+{
+    color: rgb(243, 46, 194);
+}
+
+.contacts li a.youtube:hover
+{
+    color: rgb(245, 16, 16);
+}
+
+.contacts li a.fandom:hover
+{
+    color: rgb(60, 255, 0);
+}
