@@ -41,9 +41,12 @@ input[type="checkbox"]#mode {
     -webkit-appearance: none;
     cursor: pointer;
     border-radius: 20px;
-    box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.1),
-        5px 5px 10px rgba(0, 0, 0, 1), inset -2px -2px 5px rgba(255, 255, 255, 0.1),
-        inset 2px 2px 5px rgba(0, 0, 0, 0.5), 0 0 0 2px #1f1f1f;
+    box-shadow:
+        -5px -5px 20px rgba(255, 255, 255, 0.1),
+        5px 5px 10px rgba(0, 0, 0, 1),
+        inset -2px -2px 5px rgba(255, 255, 255, 0.1),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+        0 0 0 2px #1f1f1f;
     transition: 0.5s;
 }
 
@@ -86,7 +89,6 @@ input[type="checkbox"]#mode:checked::after {
     background: gold;
     box-shadow: 0 0 5px gold, 0 0 15px gold, 0 0 30px gold;
 }
-
 
 /* Modal window */
 .modal {
