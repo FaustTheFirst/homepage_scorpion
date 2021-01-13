@@ -70,6 +70,7 @@ input[type="checkbox"]#mode:checked::after
 header
 {
     position: relative;
+    background: none;
 }
 
 /* Modal window */
@@ -110,11 +111,15 @@ header
 
 footer
 {
+    background: none;
     margin: 10px;
     position: relative;
     height: inherit;
     width: inherit;
     text-align: center;
+    color: yellow;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 .animations
@@ -173,4 +178,18 @@ footer
     position: relative;
     height: 2em;
     width: 2em;
+}
+
+html
+{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+main
+{
+    background: none;
 }
