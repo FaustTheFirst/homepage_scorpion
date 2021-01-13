@@ -1,7 +1,37 @@
-/* https://www.youtube.com/watch?v=CDldkBcrGkA&t=303s&ab_channel=OnlineTutorials */
-/* Change mode */
-input[type="checkbox"]#mode
-{
+/* General */
+html {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+main {
+    background: none;
+}
+
+header {
+    position: inherit;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background: none;
+    margin: 10px;
+    position: inherit;
+    height: inherit;
+    width: inherit;
+    text-align: center;
+    color: yellow;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+/* Change mode light-dark */
+input[type="checkbox"]#mode {
     position: relative;
     width: 60px;
     height: 20px;
@@ -12,22 +42,17 @@ input[type="checkbox"]#mode
     cursor: pointer;
     border-radius: 20px;
     box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.1),
-                5px 5px 10px rgba(0, 0, 0, 1),
-                inset -2px -2px 5px rgba(255, 255, 255, 0.1),
-                inset 2px 2px 5px rgba(0, 0, 0, 0.5),
-                0 0 0 2px #1f1f1f;
+        5px 5px 10px rgba(0, 0, 0, 1), inset -2px -2px 5px rgba(255, 255, 255, 0.1),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.5), 0 0 0 2px #1f1f1f;
     transition: 0.5s;
 }
 
-input[type="checkbox"]#mode:checked
-{
+input[type="checkbox"]#mode:checked {
     background: goldenrod;
-
 }
 
-input[type="checkbox"]#mode::before
-{
-    content: '';
+input[type="checkbox"]#mode::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -40,14 +65,12 @@ input[type="checkbox"]#mode::before
     transition: 0.5s;
 }
 
-input[type="checkbox"]#mode:checked::before
-{
+input[type="checkbox"]#mode:checked::before {
     left: 20px;
 }
 
-input[type="checkbox"]#mode::after
-{
-    content: '';
+input[type="checkbox"]#mode::after {
+    content: "";
     position: absolute;
     left: 35px;
     top: calc(50% - 2px);
@@ -58,32 +81,25 @@ input[type="checkbox"]#mode::after
     transition: 0.5s;
 }
 
-input[type="checkbox"]#mode:checked::after
-{
+input[type="checkbox"]#mode:checked::after {
     left: calc(35px + 20px);
     background: gold;
-    box-shadow: 0 0 5px gold,
-                0 0 15px gold,
-                0 0 30px gold
+    box-shadow: 0 0 5px gold, 0 0 15px gold, 0 0 30px gold;
 }
 
-header
-{
-    position: relative;
-}
 
 /* Modal window */
 .modal {
     display: none;
     position: fixed;
-    z-index: 3;
+    z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
@@ -108,25 +124,75 @@ header
     cursor: pointer;
 }
 
-footer
-{
+#modalBtn {
     margin: 10px;
-    position: relative;
-    height: inherit;
-    width: inherit;
+    height: fit-content;
+    width: fit-content;
+    background: none;
+    border: none;
 }
 
-.animations
-{
+#modalBtn:hover,
+#modalBtn:focus {
+    background: rgb(238, 238, 30);
+    cursor: pointer;
+    border-width: medium;
+    border-radius: 4px;
+}
+
+/* Animated gifs */
+.animations {
     height: 100%;
     width: 100%;
     justify-content: center;
 }
 
-.big-animation
-{
+.big-animation {
     height: 50%;
     width: 50%;
     transform: scale(-1, 1);
     justify-content: center;
+}
+
+/* Concact links and icons */
+.contacts li a {
+    color: inherit;
+}
+
+.contacts li a .icon {
+    background: white;
+}
+
+.contacts li a.facebook:hover {
+    color: rgb(11, 11, 240);
+}
+
+.contacts li a.twitter:hover {
+    color: rgb(45, 201, 248);
+}
+
+.contacts li a.instagram:hover {
+    color: rgb(243, 46, 194);
+}
+
+.contacts li a.youtube:hover {
+    color: rgb(245, 16, 16);
+}
+
+.contacts li a.fandom:hover {
+    color: rgb(60, 255, 0);
+}
+
+/* Details checkbox */
+.details > input::after {
+    content: "\1F44B";
+    border: none;
+    position: relative;
+    height: 2em;
+    width: 2em;
+}
+
+/* Video */
+iframe {
+    border: none;
 }
