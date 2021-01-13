@@ -7,9 +7,9 @@ GET OVER HERE! :feelsgood:
 
 # Preview
 
-####Light mode:
+### Light mode:
 ![](./assets/images/Preview-light.PNG)
-####...And dark mode:
+### ...And dark mode:
 ![](./assets/images/Preview-dark.PNG)
 
 # Links
@@ -21,11 +21,11 @@ GET OVER HERE! :feelsgood:
 
 # Credits
 
-1. This site is based on Mr. Kushnir`s repositoty
-2. Content for the site is taken from Fandom Wiki
+1. This site is based on [Mr. Kushnir's](https://github.com/volodymyr-kushnir/volodymyrkushnir.com) repositoty
+2. Content for the site is taken from [Fandom Wiki](https://mortalkombat.fandom.com/wiki/Scorpion)
 3. NetherRealm Studios, NetherRealm Studios logo, Mortal Kombat, and all related characters and elements are ™ & Warner Bros. Entertainment Inc.
 4. WB SHIELD ™ & Warner Bros. Entertainment Inc.(s10)
-5. Icons made by Freepik from www.flaticon.com
-6. Radio button is made according to Online tutorials
-7. Made for educational purposes to Binary Studio Academy
+5. Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from www.flaticon.com
+6. Radio button is made according to [Online tutorials](https://www.youtube.com/watch?v=CDldkBcrGkA&t=303s&ab_channel=OnlineTutorials)
+7. Made for educational purposes to [Binary Studio Academy](https://academy.binary-studio.com/ua/)
 8. Developed by Bohdan Panashenko, 2021
