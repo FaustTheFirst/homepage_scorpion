@@ -115,3 +115,18 @@ footer
     height: inherit;
     width: inherit;
 }
+
+.animations
+{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.big-animation
+{
+    height: 50%;
+    width: 50%;
+    transform: scale(-1, 1);
+    justify-content: center;
+}
